@@ -16,14 +16,14 @@
             ],
             "palette": [
                 {
+                    "color": "#1E1E1E",
+                    "name": "Primary",
+                    "slug": "rsf-primary"
+                },
+                {
                     "color": "#ffffff",
                     "name": "White",
                     "slug": "rsf-white"
-                },
-                {
-                    "color": "#000000",
-                    "name": "Black",
-                    "slug": "rsf-black"
                 },
                 {
                     "color": "#F2F2F2",
@@ -31,174 +31,209 @@
                     "slug": "rsf-neutral-lightest"
                 },
                 {
-                    "color": "#D8D9DA",
+                    "color": "#DADAD9",
                     "name": "Neutral Lighter",
                     "slug": "rsf-neutral-lighter"
                 },
                 {
-                    "color": "#B2B4B5",
+                    "color": "#B6B5B3",
                     "name": "Neutral Light",
                     "slug": "rsf-neutral-light"
                 },
                 {
-                    "color": "#7F8385",
+                    "color": "#868481",
                     "name": "Neutral",
                     "slug": "rsf-neutral"
                 },
                 {
-                    "color": "#4C5254",
+                    "color": "#55534E",
                     "name": "Neutral Dark",
                     "slug": "rsf-neutral-dark"
                 },
                 {
-                    "color": "#192023",
+                    "color": "#25221C",
                     "name": "Neutral Darker",
                     "slug": "rsf-neutral-darker"
                 },
                 {
-                    "color": "#00080B",
+                    "color": "#0D0A03",
                     "name": "Neutral Darkest",
                     "slug": "rsf-neutral-darkest"
                 },
                 {
-                    "color": "#F4EFF6",
-                    "name": "Purple Lightest",
-                    "slug": "rsf-purple-lightest"
+                    "color": "#EAEEF2",
+                    "name": "Chambray Lightest",
+                    "slug": "rsf-chambray-lightest"
                 },
                 {
-                    "color": "#E9DFED",
-                    "name": "Purple Lighter",
-                    "slug": "rsf-purple-lighter"
+                    "color": "#D5DDE5",
+                    "name": "Chambray Lighter",
+                    "slug": "rsf-chambray-lighter"
                 },
                 {
-                    "color": "#B390C2",
-                    "name": "Purple Light",
-                    "slug": "rsf-purple-light"
+                    "color": "#6E88A4",
+                    "name": "Chambray Light",
+                    "slug": "rsf-chambray-light"
                 },
                 {
-                    "color": "#9361A8",
-                    "name": "Purple",
-                    "slug": "rsf-purple"
+                    "color": "#31567D",
+                    "name": "Chambray",
+                    "slug": "rsf-chambray"
                 },
                 {
-                    "color": "#754D86",
-                    "name": "Purple Dark",
-                    "slug": "rsf-purple-dark"
+                    "color": "#274464",
+                    "name": "Chambray Dark",
+                    "slug": "rsf-chambray-dark"
                 },
                 {
-                    "color": "#3A2643",
-                    "name": "Purple Darker",
-                    "slug": "rsf-purple-darker"
+                    "color": "#132232",
+                    "name": "Chambray Darker",
+                    "slug": "rsf-chambray-darker"
                 },
                 {
-                    "color": "#2C1D32",
-                    "name": "Purple Darkest",
-                    "slug": "rsf-purple-darkest"
+                    "color": "#0E1925",
+                    "name": "Chambray Darkest",
+                    "slug": "rsf-chambray-darkest"
                 },
                 {
-                    "color": "#E5F4FB",
-                    "name": "Lake Blue Lightest",
-                    "slug": "rsf-lake-blue-lightest"
+                    "color": "#EFF2F5",
+                    "name": "Lynch Lightest",
+                    "slug": "rsf-lynch-lightest"
                 },
                 {
-                    "color": "#CCEAF7",
-                    "name": "Lake Blue Lighter",
-                    "slug": "rsf-lake-blue-lighter"
+                    "color": "#E0E5EB",
+                    "name": "Lynch Lighter",
+                    "slug": "rsf-lynch-lighter"
                 },
                 {
-                    "color": "#4CB8E5",
-                    "name": "Lake Blue Light",
-                    "slug": "rsf-lake-blue-light"
+                    "color": "#95A6B9",
+                    "name": "Lynch Light",
+                    "slug": "rsf-lynch-light"
                 },
                 {
-                    "color": "#009ADA",
-                    "name": "Lake Blue",
-                    "slug": "rsf-lake-blue"
+                    "color": "#68819C",
+                    "name": "Lynch",
+                    "slug": "rsf-lynch"
                 },
                 {
-                    "color": "#007BAE",
-                    "name": "Lake Blue Dark",
-                    "slug": "rsf-lake-blue-dark"
+                    "color": "#53677C",
+                    "name": "Lynch Dark",
+                    "slug": "rsf-lynch-dark"
                 },
                 {
-                    "color": "#003D57",
-                    "name": "Lake Blue Darker",
-                    "slug": "rsf-lake-blue-darker"
+                    "color": "#29333E",
+                    "name": "Lynch Darker",
+                    "slug": "rsf-lynch-darker"
                 },
                 {
-                    "color": "#002E41",
-                    "name": "Lake Blue Darkest",
-                    "slug": "rsf-lake-blue-darkest"
+                    "color": "#1F262E",
+                    "name": "Lynch Darkest",
+                    "slug": "rsf-lynch-darkest"
                 },
                 {
-                    "color": "#F6F7F9",
-                    "name": "Navy Blue Lightest",
-                    "slug": "rsf-navy-blue-lightest"
+                    "color": "#F9F9F9",
+                    "name": "Silver Lightest",
+                    "slug": "rsf-silver-lightest"
                 },
                 {
-                    "color": "#CCD4DD",
-                    "name": "Navy Blue Lighter",
-                    "slug": "rsf-navy-blue-lighter"
+                    "color": "#F4F4F4",
+                    "name": "Silver Lighter",
+                    "slug": "rsf-silver-lighter"
                 },
                 {
-                    "color": "#4C6989",
-                    "name": "Navy Blue Light",
-                    "slug": "rsf-navy-blue-light"
+                    "color": "#DBDBDB",
+                    "name": "Silver Light",
+                    "slug": "rsf-silver-light"
                 },
                 {
-                    "color": "#002957",
-                    "name": "Navy Blue",
-                    "slug": "rsf-navy-blue"
+                    "color": "#CCCCCC",
+                    "name": "Silver",
+                    "slug": "rsf-silver"
                 },
                 {
-                    "color": "#002045",
-                    "name": "Navy Blue Dark",
-                    "slug": "rsf-navy-blue-dark"
+                    "color": "#A3A3A3",
+                    "name": "Silver Dark",
+                    "slug": "rsf-silver-dark"
                 },
                 {
-                    "color": "#001022",
-                    "name": "Navy Blue Darker",
-                    "slug": "rsf-navy-blue-darker"
+                    "color": "#515151",
+                    "name": "Silver Darker",
+                    "slug": "rsf-silver-darker"
                 },
                 {
-                    "color": "#000C1A",
-                    "name": "Navy Blue Darkest",
-                    "slug": "rsf-navy-blue-darkest"
+                    "color": "#3D3D3D",
+                    "name": "Silver Darkest",
+                    "slug": "rsf-silver-darkest"
                 },
                 {
-                    "color": "#FEFEFE",
-                    "name": "Gray Haze Lightest",
-                    "slug": "rsf-gray-haze-lightest"
+                    "color": "#F1E5E8",
+                    "name": "Venetian Red Lightest",
+                    "slug": "rsf-venetian-red-lightest"
                 },
                 {
-                    "color": "#FDFDFD",
-                    "name": "Gray Haze Lighter",
-                    "slug": "rsf-gray-haze-lighter"
+                    "color": "#E4CCD1",
+                    "name": "Venetian Red Lighter",
+                    "slug": "rsf-venetian-red-lighter"
                 },
                 {
-                    "color": "#F8F9FA",
-                    "name": "Gray Haze Light",
-                    "slug": "rsf-gray-haze-light"
+                    "color": "#A14C5E",
+                    "name": "Venetian Red Light",
+                    "slug": "rsf-venetian-red-light"
                 },
                 {
-                    "color": "#F6F7F9",
-                    "name": "Gray Haze",
-                    "slug": "rsf-gray-haze"
+                    "color": "#7A0019",
+                    "name": "Venetian Red",
+                    "slug": "rsf-venetian-red"
                 },
                 {
-                    "color": "#C4C5C7",
-                    "name": "Gray Haze Dark",
-                    "slug": "rsf-gray-haze-dark"
+                    "color": "#610014",
+                    "name": "Venetian Red Dark",
+                    "slug": "rsf-venetian-red-dark"
                 },
                 {
-                    "color": "#626263",
-                    "name": "Gray Haze Darker",
-                    "slug": "rsf-gray-haze-darker"
+                    "color": "#30000A",
+                    "name": "Venetian Red Darker",
+                    "slug": "rsf-venetian-red-darker"
                 },
                 {
-                    "color": "#494A4A",
-                    "name": "Gray Haze Darkest",
-                    "slug": "rsf-gray-haze-darkest"
+                    "color": "#240007",
+                    "name": "Venetian Red Darkest",
+                    "slug": "rsf-venetian-red-darkest"
+                },
+                {
+                    "color": "#FFF9EA",
+                    "name": "Sunglow Lightest",
+                    "slug": "rsf-sunglow-lightest"
+                },
+                {
+                    "color": "#FFF4D6",
+                    "name": "Sunglow Lighter",
+                    "slug": "rsf-sunglow-lighter"
+                },
+                {
+                    "color": "#FFDB70",
+                    "name": "Sunglow Light",
+                    "slug": "rsf-sunglow-light"
+                },
+                {
+                    "color": "#FFCC33",
+                    "name": "Sunglow",
+                    "slug": "rsf-sunglow"
+                },
+                {
+                    "color": "#CCA328",
+                    "name": "Sunglow Dark",
+                    "slug": "rsf-sunglow-dark"
+                },
+                {
+                    "color": "#665114",
+                    "name": "Sunglow Darker",
+                    "slug": "rsf-sunglow-darker"
+                },
+                {
+                    "color": "#4C3D0F",
+                    "name": "Sunglow Darkest",
+                    "slug": "rsf-sunglow-darkest"
                 }
             ]
         },
@@ -382,21 +417,89 @@
                     ]
                 },
                 {
-                    "name": "Trebuchet MS",
-                    "slug": "trebuchet-ms",
-                    "fontFamily": "\"Trebuchet MS\", sans-serif",
+                    "name": "Inter",
+                    "slug": "inter",
+                    "fontFamily": "Inter, sans-serif",
                     "fontFace": [
                         {
-                            "src": ["file:./assets/fonts/trebuchet-ms/Trebuchet-MS.woff2"],
+                            "src": [
+                                "file:./assets/fonts/inter/inter-400-normal.woff2"
+                            ],
                             "fontWeight": "400",
                             "fontStyle": "normal",
-                            "fontFamily": "\"Trebuchet MS\""
+                            "fontFamily": "Inter"
                         },
                         {
-                            "src": ["file:./assets/fonts/trebuchet-ms/Trebuchet-MS-Italic.woff2"],
+                            "src": [
+                                "file:./assets/fonts/inter/inter-500-normal.woff2"
+                            ],
+                            "fontWeight": "500",
+                            "fontStyle": "normal",
+                            "fontFamily": "Inter"
+                        },
+                        {
+                            "src": [
+                                "file:./assets/fonts/inter/inter-600-normal.woff2"
+                            ],
+                            "fontWeight": "600",
+                            "fontStyle": "normal",
+                            "fontFamily": "Inter"
+                        },
+                        {
+                            "src": [
+                                "file:./assets/fonts/inter/inter-700-normal.woff2"
+                            ],
+                            "fontWeight": "700",
+                            "fontStyle": "normal",
+                            "fontFamily": "Inter"
+                        },
+                        {
+                            "src": [
+                                "file:./assets/fonts/inter/inter-300-normal.woff2"
+                            ],
+                            "fontWeight": "300",
+                            "fontStyle": "normal",
+                            "fontFamily": "Inter"
+                        },
+                        {
+                            "src": [
+                                "file:./assets/fonts/inter/inter-300-italic.woff2"
+                            ],
+                            "fontWeight": "300",
+                            "fontStyle": "italic",
+                            "fontFamily": "Inter"
+                        },
+                        {
+                            "src": [
+                                "file:./assets/fonts/inter/inter-400-italic.woff2"
+                            ],
                             "fontWeight": "400",
                             "fontStyle": "italic",
-                            "fontFamily": "\"Trebuchet MS\""
+                            "fontFamily": "Inter"
+                        },
+                        {
+                            "src": [
+                                "file:./assets/fonts/inter/inter-500-italic.woff2"
+                            ],
+                            "fontWeight": "500",
+                            "fontStyle": "italic",
+                            "fontFamily": "Inter"
+                        },
+                        {
+                            "src": [
+                                "file:./assets/fonts/inter/inter-600-italic.woff2"
+                            ],
+                            "fontWeight": "600",
+                            "fontStyle": "italic",
+                            "fontFamily": "Inter"
+                        },
+                        {
+                            "src": [
+                                "file:./assets/fonts/inter/inter-700-italic.woff2"
+                            ],
+                            "fontWeight": "700",
+                            "fontStyle": "italic",
+                            "fontFamily": "Inter"
                         }
                     ]
                 }
@@ -404,11 +507,11 @@
             "fontSizes": [
                 {
                     "name": "Heading One",
-                    "size": "72px",
+                    "size": "56px",
                     "slug": "rsf-heading-one",
                     "fluid": {
-                        "min": "40px",
-                        "max": "72px"
+                        "min": "48px",
+                        "max": "56px"
                     }
                 },
                 {
@@ -416,7 +519,7 @@
                     "size": "48px",
                     "slug": "rsf-heading-two",
                     "fluid": {
-                        "min": "36px",
+                        "min": "40px",
                         "max": "48px"
                     }
                 },
@@ -425,7 +528,7 @@
                     "size": "40px",
                     "slug": "rsf-heading-three",
                     "fluid": {
-                        "min": "30px",
+                        "min": "32px",
                         "max": "40px"
                     }
                 },
@@ -434,7 +537,7 @@
                     "size": "32px",
                     "slug": "rsf-heading-four",
                     "fluid": {
-                        "min": "24px",
+                        "min": "28px",
                         "max": "32px"
                     }
                 },
@@ -443,7 +546,7 @@
                     "size": "24px",
                     "slug": "rsf-heading-five",
                     "fluid": {
-                        "min": "18px",
+                        "min": "20px",
                         "max": "24px"
                     }
                 },
@@ -496,13 +599,26 @@
                 "variations": {
                     "outline": {
                         "border": {
-                            "color": "var(--wp--preset--color--rsf-lake-blue)",
-                            "style": "solid",
-                            "width": "2px"
+                            "radius": "0",
+                            "style": "none",
+                            "width": "0"
                         },
                         "color": {
                             "background": "transparent",
-                            "text": "var(--wp--preset--color--rsf-lake-blue)"
+                            "text": "var(--wp--preset--color--rsf-chambray)"
+                        },
+                        "css": "& .wp-block-button__link{padding:0 !important;background:none !important;display:inline-flex !important;align-items:center;gap:16px;}& .wp-block-button__link::after{content:url(\"data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.125 1v7c0 .563-.469 1-1 1-.562 0-1-.437-1-1V3.438l-6.312 6.28a.964.964 0 0 1-1.407 0 .964.964 0 0 1 0-1.405L6.688 2H2.125c-.562 0-1-.437-1-1 0-.531.438-1 1-1h7c.531 0 1 .469 1 1' fill='%2331567d'/%3E%3C/svg%3E\");flex-shrink:0;display:inline-flex;align-items:center;}"
+                    },
+                    "alternative": {
+                        "color": {
+                            "background": "var(--wp--preset--color--rsf-white)",
+                            "text": "var(--wp--preset--color--rsf-chambray)"
+                        },
+                        ":hover": {
+                            "color": {
+                                "background": "var(--wp--preset--color--rsf-white)",
+                                "text": "var(--wp--preset--color--rsf-chambray-darker)"
+                            }
                         }
                     }
                 }
@@ -886,19 +1002,19 @@
         "elements": {
             "button": {
                 "border": {
-                    "radius": "100px"
+                    "radius": "6px"
                 },
                 "color": {
-                    "background": "var(--wp--preset--color--rsf-purple)",
+                    "background": "var(--wp--preset--color--rsf-chambray-dark)",
                     "text": "var(--wp--preset--color--rsf-white)"
                 },
                 "css": "transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);",
                 "spacing": {
                     "padding": {
-                        "bottom": "10px",
-                        "left": "24px",
-                        "right": "24px",
-                        "top": "10px"
+                        "bottom": "8px",
+                        "left": "var(--wp--preset--spacing--rsf-20)",
+                        "right": "var(--wp--preset--spacing--rsf-20)",
+                        "top": "8px"
                     }
                 },
                 "typography": {
@@ -906,17 +1022,17 @@
                     "fontSize": "var(--wp--preset--font-size--rsf-large)",
                     "fontStyle": "normal",
                     "fontWeight": "400",
-                    "lineHeight": "1.5"
+                    "lineHeight": "1.6"
                 },
                 ":hover": {
                     "color": {
-                        "background": "var(--wp--preset--color--rsf-purple-dark)",
+                        "background": "var(--wp--preset--color--rsf-chambray-darker)",
                         "text": "var(--wp--preset--color--rsf-white)"
                     }
                 },
                 ":focus": {
                     "outline": {
-                        "color": "var(--wp--preset--color--rsf-purple)",
+                        "color": "var(--wp--preset--color--rsf-chambray-dark)",
                         "offset": "2px"
                     }
                 }
@@ -930,7 +1046,7 @@
             },
             "h1": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--trebuchet-ms)",
+                    "fontFamily": "var(--wp--preset--font-family--inter)",
                     "fontSize": "var(--wp--preset--font-size--rsf-heading-one)",
                     "fontStyle": "normal",
                     "fontWeight": "700",
@@ -942,7 +1058,7 @@
             },
             "h2": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--trebuchet-ms)",
+                    "fontFamily": "var(--wp--preset--font-family--inter)",
                     "fontSize": "var(--wp--preset--font-size--rsf-heading-two)",
                     "fontStyle": "normal",
                     "fontWeight": "700",
@@ -954,7 +1070,7 @@
             },
             "h3": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--trebuchet-ms)",
+                    "fontFamily": "var(--wp--preset--font-family--inter)",
                     "fontSize": "var(--wp--preset--font-size--rsf-heading-three)",
                     "fontStyle": "normal",
                     "fontWeight": "700",
@@ -966,7 +1082,7 @@
             },
             "h4": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--trebuchet-ms)",
+                    "fontFamily": "var(--wp--preset--font-family--inter)",
                     "fontSize": "var(--wp--preset--font-size--rsf-heading-four)",
                     "fontStyle": "normal",
                     "fontWeight": "700",
@@ -978,7 +1094,7 @@
             },
             "h5": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--trebuchet-ms)",
+                    "fontFamily": "var(--wp--preset--font-family--inter)",
                     "fontSize": "var(--wp--preset--font-size--rsf-heading-five)",
                     "fontStyle": "normal",
                     "fontWeight": "700",
@@ -991,7 +1107,7 @@
             },
             "h6": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--trebuchet-ms)",
+                    "fontFamily": "var(--wp--preset--font-family--inter)",
                     "fontSize": "var(--wp--preset--font-size--rsf-heading-six)",
                     "fontStyle": "normal",
                     "fontWeight": "700",
@@ -1008,7 +1124,7 @@
                     "text": "var(--wp--preset--color--rsf-neutral-darker)"
                 },
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--trebuchet-ms)",
+                    "fontFamily": "var(--wp--preset--font-family--inter)",
                     "fontStyle": "normal",
                     "fontWeight": "700",
                     "letterSpacing": "0px",
@@ -1018,7 +1134,7 @@
             "link": {
                 ":hover": {
                     "color": {
-                        "text": "var(--wp--preset--color--rsf-firefly)"
+                        "text": "var(--wp--preset--color--rsf-chambray)"
                     },
                     "typography": {
                         "textDecoration": "none"

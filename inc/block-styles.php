@@ -15,16 +15,24 @@ if ( ! function_exists( 'rsf_block_styles' ) ) :
 		register_block_style(
 			'core/post-excerpt',
 			array(
-				'name'         => 'outline-link',
-				'label'        => __( 'Outline Link', 'rock-solid-financials' ),
+				'name'  => 'outline-link',
+				'label' => __( 'Outline Link', 'rock-solid-financials' ),
 			)
 		);
-		
+
 		register_block_style(
 			'core/group',
 			array(
-				'name'         => 'wrap-mobile',
-				'label'        => __( 'Wrap Mobile', 'rock-solid-financials' ),
+				'name'  => 'wrap-mobile',
+				'label' => __( 'Wrap Mobile', 'rock-solid-financials' ),
+			)
+		);
+
+		register_block_style(
+			'core/button',
+			array(
+				'name'  => 'alternative',
+				'label' => __( 'Alternative', 'rock-solid-financials' ),
 			)
 		);
 	}

@@ -1460,17 +1460,15 @@ if ( ! function_exists( 'rsf_render_iconic_button' ) ) :
 			}
 		}
 
-		// Build the icon markup and inject it before/after the link's inner content.
+		// Build the icon markup and inject it after the link's inner content.
+		// Before/after visual ordering is handled entirely by CSS (flex-direction: row-reverse
+		// on the .rsf-icon-before class), so the DOM position is always icon-after-text.
 		$icon_html = '<span class="rsf-icon-button-svg">' . wp_kses( $icon_svg, rsf_iconic_button_svg_kses_args() ) . '</span>';
-		$position  = $attrs['iconicButtonIconPosition'] ?? '';
 
 		$block_content = preg_replace_callback(
 			'/(<a[^>]*class="[^"]*wp-block-button__link[^"]*"[^>]*>)(.*?)(<\/a>)/s',
-			function ( $matches ) use ( $icon_html, $position ) {
+			function ( $matches ) use ( $icon_html ) {
 				$content = trim( $matches[2] );
-				if ( '' !== $position ) {
-					return $matches[1] . $icon_html . $content . $matches[3];
-				}
 				return $matches[1] . $content . $icon_html . $matches[3];
 			},
 			$block_content
