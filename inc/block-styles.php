@@ -28,11 +28,20 @@ if ( ! function_exists( 'rsf_block_styles' ) ) :
 			)
 		);
 
+
 		register_block_style(
 			'core/button',
 			array(
 				'name'  => 'alternative',
 				'label' => __( 'Alternative', 'rock-solid-financials' ),
+			)
+		);
+
+		register_block_style(
+			'core/button',
+			array(
+				'name'  => 'link',
+				'label' => __( 'Link', 'rock-solid-financials' ),
 			)
 		);
 	}

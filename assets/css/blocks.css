@@ -66,6 +66,23 @@ header.wp-block-kadence-rowlayout::before {
     gap: 12px;
 }
 
+.wp-block-button.is-style-link .wp-block-button__link {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 16px;
+}
+
+.wp-block-button.is-style-link .wp-block-button__link::after {
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-image: url("data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.125 1v7c0 .563-.469 1-1 1-.562 0-1-.437-1-1V3.438l-6.312 6.28a.964.964 0 0 1-1.407 0 .964.964 0 0 1 0-1.405L6.688 2H2.125c-.562 0-1-.437-1-1 0-.531.438-1 1-1h7c.531 0 1 .469 1 1' fill='%2331567d'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-shrink: 0;
+}
+
 .has-featured-image-bg:before {
     background: linear-gradient(172.74deg, rgba(17, 17, 17, 0) -35.15%, #1e1e1e 81.33%);
     content: '';

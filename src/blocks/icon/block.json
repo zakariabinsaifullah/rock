@@ -76,14 +76,14 @@
         "sizes": {
             "type": "object",
             "default": {
-                "Desktop": 36,
-                "Tablet": 36,
-                "Mobile": 36
+                "Desktop": 24,
+                "Tablet": 24,
+                "Mobile": 24
             }
         },
         "iconSize": {
             "type": "number",
-            "default": 36
+            "default": 24
         },
         "width": {
             "type": "number"

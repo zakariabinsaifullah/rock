@@ -27,7 +27,7 @@ if ( ! function_exists( 'rsf_enqueue_hover_color_editor_assets' ) ) :
 			'rsf-hover-color-extension',
 			get_theme_file_uri( 'build/extensions/hover-color/index.js' ),
 			$assets['dependencies'],
-			$assets['version'],
+			wp_get_theme()->get( 'Version' ),
 			true
 		);
 
@@ -37,7 +37,7 @@ if ( ! function_exists( 'rsf_enqueue_hover_color_editor_assets' ) ) :
 				'rsf-hover-color-extension',
 				get_theme_file_uri( 'build/extensions/hover-color/index.css' ),
 				array(),
-				$assets['version']
+				wp_get_theme()->get( 'Version' )
 			);
 		}
 	}
@@ -64,7 +64,7 @@ if ( ! function_exists( 'rsf_enqueue_hover_color_frontend_assets' ) ) :
 			'rsf-hover-color-extension-style',
 			get_theme_file_uri( 'build/extensions/hover-color/style-index.css' ),
 			array(),
-			$assets['version']
+			wp_get_theme()->get( 'Version' )
 		);
 	}
 endif;
@@ -190,7 +190,7 @@ if ( ! function_exists( 'rsf_enqueue_group_full_height_editor_assets' ) ) :
 			'rsf-group-full-height-extension',
 			get_theme_file_uri( 'build/extensions/group-full-height/index.js' ),
 			$assets['dependencies'],
-			$assets['version'],
+			wp_get_theme()->get( 'Version' ),
 			true
 		);
 
@@ -200,7 +200,7 @@ if ( ! function_exists( 'rsf_enqueue_group_full_height_editor_assets' ) ) :
 				'rsf-group-full-height-extension',
 				get_theme_file_uri( 'build/extensions/group-full-height/index.css' ),
 				array(),
-				$assets['version']
+				wp_get_theme()->get( 'Version' )
 			);
 		}
 	}
@@ -227,7 +227,7 @@ if ( ! function_exists( 'rsf_enqueue_group_full_height_frontend_assets' ) ) :
 			'rsf-group-full-height-extension-style',
 			get_theme_file_uri( 'build/extensions/group-full-height/style-index.css' ),
 			array(),
-			$assets['version']
+			wp_get_theme()->get( 'Version' )
 		);
 	}
 endif;
@@ -291,7 +291,7 @@ if ( ! function_exists( 'rsf_enqueue_glass_effect_editor_assets' ) ) :
 			'rsf-glass-effect-extension',
 			get_theme_file_uri( 'build/extensions/glass-effect/index.js' ),
 			$assets['dependencies'],
-			$assets['version'],
+			wp_get_theme()->get( 'Version' ),
 			true
 		);
 	}
@@ -357,7 +357,7 @@ if ( ! function_exists( 'rsf_enqueue_group_overlay_bg_editor_assets' ) ) :
 			'rsf-group-overlay-bg-extension',
 			get_theme_file_uri( 'build/extensions/group-overlay-bg/index.js' ),
 			$assets['dependencies'],
-			$assets['version'],
+			wp_get_theme()->get( 'Version' ),
 			true
 		);
 
@@ -367,7 +367,7 @@ if ( ! function_exists( 'rsf_enqueue_group_overlay_bg_editor_assets' ) ) :
 				'rsf-group-overlay-bg-extension',
 				get_theme_file_uri( 'build/extensions/group-overlay-bg/index.css' ),
 				array(),
-				$assets['version']
+				wp_get_theme()->get( 'Version' )
 			);
 		}
 	}
@@ -394,7 +394,7 @@ if ( ! function_exists( 'rsf_enqueue_group_overlay_bg_frontend_assets' ) ) :
 			'rsf-group-overlay-bg-extension-style',
 			get_theme_file_uri( 'build/extensions/group-overlay-bg/style-index.css' ),
 			array(),
-			$assets['version']
+			wp_get_theme()->get( 'Version' )
 		);
 	}
 endif;
@@ -480,7 +480,7 @@ if ( ! function_exists( 'rsf_enqueue_group_global_hover_editor_assets' ) ) :
 			'rsf-group-global-hover-extension',
 			get_theme_file_uri( 'build/extensions/group-global-hover/index.js' ),
 			$assets['dependencies'],
-			$assets['version'],
+			wp_get_theme()->get( 'Version' ),
 			true
 		);
 
@@ -490,7 +490,7 @@ if ( ! function_exists( 'rsf_enqueue_group_global_hover_editor_assets' ) ) :
 				'rsf-group-global-hover-extension',
 				get_theme_file_uri( 'build/extensions/group-global-hover/index.css' ),
 				array(),
-				$assets['version']
+				wp_get_theme()->get( 'Version' )
 			);
 		}
 	}
@@ -517,7 +517,7 @@ if ( ! function_exists( 'rsf_enqueue_group_global_hover_frontend_assets' ) ) :
 			'rsf-group-global-hover-extension-style',
 			get_theme_file_uri( 'build/extensions/group-global-hover/style-index.css' ),
 			array(),
-			$assets['version']
+			wp_get_theme()->get( 'Version' )
 		);
 	}
 endif;
@@ -613,7 +613,7 @@ if ( ! function_exists( 'rsf_enqueue_text_max_width_editor_assets' ) ) :
 			'rsf-text-max-width-extension',
 			get_theme_file_uri( 'build/extensions/text-max-width/index.js' ),
 			$assets['dependencies'],
-			$assets['version'],
+			wp_get_theme()->get( 'Version' ),
 			true
 		);
 
@@ -623,7 +623,7 @@ if ( ! function_exists( 'rsf_enqueue_text_max_width_editor_assets' ) ) :
 				'rsf-text-max-width-extension',
 				get_theme_file_uri( 'build/extensions/text-max-width/index.css' ),
 				array(),
-				$assets['version']
+				wp_get_theme()->get( 'Version' )
 			);
 		}
 	}
@@ -650,7 +650,7 @@ if ( ! function_exists( 'rsf_enqueue_text_max_width_frontend_assets' ) ) :
 			'rsf-text-max-width-extension-style',
 			get_theme_file_uri( 'build/extensions/text-max-width/style-index.css' ),
 			array(),
-			$assets['version']
+			wp_get_theme()->get( 'Version' )
 		);
 	}
 endif;
@@ -726,7 +726,7 @@ if ( ! function_exists( 'rsf_enqueue_button_full_width_mobile_editor_assets' ) )
 			'rsf-button-full-width-mobile-extension',
 			get_theme_file_uri( 'build/extensions/button-full-width-mobile/index.js' ),
 			$assets['dependencies'],
-			$assets['version'],
+			wp_get_theme()->get( 'Version' ),
 			true
 		);
 
@@ -736,7 +736,7 @@ if ( ! function_exists( 'rsf_enqueue_button_full_width_mobile_editor_assets' ) )
 				'rsf-button-full-width-mobile-extension',
 				get_theme_file_uri( 'build/extensions/button-full-width-mobile/index.css' ),
 				array(),
-				$assets['version']
+				wp_get_theme()->get( 'Version' )
 			);
 		}
 	}
@@ -763,7 +763,7 @@ if ( ! function_exists( 'rsf_enqueue_button_full_width_mobile_frontend_assets' )
 			'rsf-button-full-width-mobile-extension-style',
 			get_theme_file_uri( 'build/extensions/button-full-width-mobile/style-index.css' ),
 			array(),
-			$assets['version']
+			wp_get_theme()->get( 'Version' )
 		);
 	}
 endif;
@@ -826,7 +826,7 @@ if ( ! function_exists( 'rsf_enqueue_query_carousel_editor_assets' ) ) :
 			'rsf-query-carousel-extension',
 			get_theme_file_uri( 'build/extensions/query-carousel/index.js' ),
 			$assets['dependencies'],
-			$assets['version'],
+			wp_get_theme()->get( 'Version' ),
 			true
 		);
 
@@ -836,7 +836,7 @@ if ( ! function_exists( 'rsf_enqueue_query_carousel_editor_assets' ) ) :
 				'rsf-query-carousel-extension',
 				get_theme_file_uri( 'build/extensions/query-carousel/index.css' ),
 				array(),
-				$assets['version']
+				wp_get_theme()->get( 'Version' )
 			);
 		}
 	}
@@ -864,7 +864,7 @@ if ( ! function_exists( 'rsf_enqueue_query_carousel_frontend_assets' ) ) :
 			'rsf-query-carousel-extension-style',
 			get_theme_file_uri( 'build/extensions/query-carousel/style-index.css' ),
 			array( 'rsf-swiper-style' ),
-			$assets['version']
+			wp_get_theme()->get( 'Version' )
 		);
 	}
 endif;
@@ -901,7 +901,7 @@ if ( ! function_exists( 'rsf_enqueue_query_carousel_view_script' ) ) :
 			'rsf-query-carousel-view',
 			get_theme_file_uri( 'build/extensions/query-carousel/view.js' ),
 			array( 'rsf-swiper-script' ),
-			$assets['version'],
+			wp_get_theme()->get( 'Version' ),
 			true
 		);
 	}
@@ -1112,7 +1112,7 @@ if ( ! function_exists( 'rsf_enqueue_group_grid_columns_editor_assets' ) ) :
 			'rsf-group-grid-columns-extension',
 			get_theme_file_uri( 'build/extensions/group-grid-columns/index.js' ),
 			$assets['dependencies'],
-			$assets['version'],
+			wp_get_theme()->get( 'Version' ),
 			true
 		);
 
@@ -1122,7 +1122,7 @@ if ( ! function_exists( 'rsf_enqueue_group_grid_columns_editor_assets' ) ) :
 				'rsf-group-grid-columns-extension',
 				get_theme_file_uri( 'build/extensions/group-grid-columns/index.css' ),
 				array(),
-				$assets['version']
+				wp_get_theme()->get( 'Version' )
 			);
 		}
 	}
@@ -1148,7 +1148,7 @@ if ( ! function_exists( 'rsf_enqueue_group_grid_columns_frontend_assets' ) ) :
 			'rsf-group-grid-columns-extension-style',
 			get_theme_file_uri( 'build/extensions/group-grid-columns/style-index.css' ),
 			array(),
-			$assets['version']
+			wp_get_theme()->get( 'Version' )
 		);
 	}
 endif;
@@ -1241,7 +1241,7 @@ if ( ! function_exists( 'rsf_enqueue_iconic_button_editor_assets' ) ) :
 			'rsf-iconic-button-extension',
 			get_theme_file_uri( 'build/extensions/iconic-button/index.js' ),
 			$assets['dependencies'],
-			$assets['version'],
+			wp_get_theme()->get( 'Version' ),
 			true
 		);
 
@@ -1251,7 +1251,7 @@ if ( ! function_exists( 'rsf_enqueue_iconic_button_editor_assets' ) ) :
 				'rsf-iconic-button-extension',
 				get_theme_file_uri( 'build/extensions/iconic-button/index.css' ),
 				array(),
-				$assets['version']
+				wp_get_theme()->get( 'Version' )
 			);
 		}
 	}
@@ -1278,7 +1278,7 @@ if ( ! function_exists( 'rsf_enqueue_iconic_button_frontend_assets' ) ) :
 			'rsf-iconic-button-extension-style',
 			get_theme_file_uri( 'build/extensions/iconic-button/style-index.css' ),
 			array(),
-			$assets['version']
+			wp_get_theme()->get( 'Version' )
 		);
 	}
 endif;
@@ -1503,7 +1503,7 @@ if ( ! function_exists( 'rsf_enqueue_iconlist_icon_position_editor_assets' ) ) :
 			'rsf-iconlist-icon-position-extension',
 			get_theme_file_uri( 'build/extensions/iconlist-icon-position/index.js' ),
 			$assets['dependencies'],
-			$assets['version'],
+			wp_get_theme()->get( 'Version' ),
 			true
 		);
 	}
@@ -1566,7 +1566,7 @@ if ( ! function_exists( 'rsf_enqueue_kadence_featured_bg_editor_assets' ) ) :
 			'rsf-kadence-featured-bg-extension',
 			get_theme_file_uri( 'build/extensions/kadence-featured-bg/index.js' ),
 			$assets['dependencies'],
-			$assets['version'],
+			wp_get_theme()->get( 'Version' ),
 			true
 		);
 
@@ -1576,7 +1576,7 @@ if ( ! function_exists( 'rsf_enqueue_kadence_featured_bg_editor_assets' ) ) :
 				'rsf-kadence-featured-bg-extension',
 				get_theme_file_uri( 'build/extensions/kadence-featured-bg/index.css' ),
 				array(),
-				$assets['version']
+				wp_get_theme()->get( 'Version' )
 			);
 		}
 	}
@@ -1602,7 +1602,7 @@ if ( ! function_exists( 'rsf_enqueue_kadence_featured_bg_frontend_assets' ) ) :
 			'rsf-kadence-featured-bg-extension-style',
 			get_theme_file_uri( 'build/extensions/kadence-featured-bg/style-index.css' ),
 			array(),
-			$assets['version']
+			wp_get_theme()->get( 'Version' )
 		);
 	}
 endif;
