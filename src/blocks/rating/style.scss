@@ -6,7 +6,7 @@
         gap: 2px;
 
         svg {
-            fill: var(--rating-color, #9361A8);
+            fill: var(--rating-color, var(--wp--preset--color--rsf-sunglow));
             font-size: var(--rating-size, 16px);
             height: 1em;
             width: 1em;

@@ -300,14 +300,7 @@
                     "slug": "rsf-section-padding"
                 }
             ],
-            "units": [
-                "%",
-                "px",
-                "em",
-                "rem",
-                "vh",
-                "vw"
-            ]
+            "units": ["%", "px", "em", "rem", "vh", "vw"]
         },
         "typography": {
             "defaultFontSizes": false,
@@ -319,97 +312,73 @@
                     "fontFamily": "\"Source Sans 3\", sans-serif",
                     "fontFace": [
                         {
-                            "src": [
-                                "file:./assets/fonts/source-sans-3/source-sans-3-200-normal.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/source-sans-3/source-sans-3-200-normal.woff2"],
                             "fontWeight": "200",
                             "fontStyle": "normal",
                             "fontFamily": "\"Source Sans 3\""
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/source-sans-3/source-sans-3-300-normal.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/source-sans-3/source-sans-3-300-normal.woff2"],
                             "fontWeight": "300",
                             "fontStyle": "normal",
                             "fontFamily": "\"Source Sans 3\""
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/source-sans-3/source-sans-3-400-normal.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/source-sans-3/source-sans-3-400-normal.woff2"],
                             "fontWeight": "400",
                             "fontStyle": "normal",
                             "fontFamily": "\"Source Sans 3\""
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/source-sans-3/source-sans-3-500-normal.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/source-sans-3/source-sans-3-500-normal.woff2"],
                             "fontWeight": "500",
                             "fontStyle": "normal",
                             "fontFamily": "\"Source Sans 3\""
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/source-sans-3/source-sans-3-600-normal.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/source-sans-3/source-sans-3-600-normal.woff2"],
                             "fontWeight": "600",
                             "fontStyle": "normal",
                             "fontFamily": "\"Source Sans 3\""
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/source-sans-3/source-sans-3-700-normal.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/source-sans-3/source-sans-3-700-normal.woff2"],
                             "fontWeight": "700",
                             "fontStyle": "normal",
                             "fontFamily": "\"Source Sans 3\""
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/source-sans-3/source-sans-3-200-italic.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/source-sans-3/source-sans-3-200-italic.woff2"],
                             "fontWeight": "200",
                             "fontStyle": "italic",
                             "fontFamily": "\"Source Sans 3\""
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/source-sans-3/source-sans-3-300-italic.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/source-sans-3/source-sans-3-300-italic.woff2"],
                             "fontWeight": "300",
                             "fontStyle": "italic",
                             "fontFamily": "\"Source Sans 3\""
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/source-sans-3/source-sans-3-400-italic.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/source-sans-3/source-sans-3-400-italic.woff2"],
                             "fontWeight": "400",
                             "fontStyle": "italic",
                             "fontFamily": "\"Source Sans 3\""
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/source-sans-3/source-sans-3-500-italic.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/source-sans-3/source-sans-3-500-italic.woff2"],
                             "fontWeight": "500",
                             "fontStyle": "italic",
                             "fontFamily": "\"Source Sans 3\""
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/source-sans-3/source-sans-3-600-italic.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/source-sans-3/source-sans-3-600-italic.woff2"],
                             "fontWeight": "600",
                             "fontStyle": "italic",
                             "fontFamily": "\"Source Sans 3\""
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/source-sans-3/source-sans-3-700-italic.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/source-sans-3/source-sans-3-700-italic.woff2"],
                             "fontWeight": "700",
                             "fontStyle": "italic",
                             "fontFamily": "\"Source Sans 3\""
@@ -422,81 +391,61 @@
                     "fontFamily": "Inter, sans-serif",
                     "fontFace": [
                         {
-                            "src": [
-                                "file:./assets/fonts/inter/inter-400-normal.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/inter/inter-400-normal.woff2"],
                             "fontWeight": "400",
                             "fontStyle": "normal",
                             "fontFamily": "Inter"
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/inter/inter-500-normal.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/inter/inter-500-normal.woff2"],
                             "fontWeight": "500",
                             "fontStyle": "normal",
                             "fontFamily": "Inter"
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/inter/inter-600-normal.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/inter/inter-600-normal.woff2"],
                             "fontWeight": "600",
                             "fontStyle": "normal",
                             "fontFamily": "Inter"
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/inter/inter-700-normal.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/inter/inter-700-normal.woff2"],
                             "fontWeight": "700",
                             "fontStyle": "normal",
                             "fontFamily": "Inter"
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/inter/inter-300-normal.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/inter/inter-300-normal.woff2"],
                             "fontWeight": "300",
                             "fontStyle": "normal",
                             "fontFamily": "Inter"
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/inter/inter-300-italic.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/inter/inter-300-italic.woff2"],
                             "fontWeight": "300",
                             "fontStyle": "italic",
                             "fontFamily": "Inter"
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/inter/inter-400-italic.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/inter/inter-400-italic.woff2"],
                             "fontWeight": "400",
                             "fontStyle": "italic",
                             "fontFamily": "Inter"
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/inter/inter-500-italic.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/inter/inter-500-italic.woff2"],
                             "fontWeight": "500",
                             "fontStyle": "italic",
                             "fontFamily": "Inter"
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/inter/inter-600-italic.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/inter/inter-600-italic.woff2"],
                             "fontWeight": "600",
                             "fontStyle": "italic",
                             "fontFamily": "Inter"
                         },
                         {
-                            "src": [
-                                "file:./assets/fonts/inter/inter-700-italic.woff2"
-                            ],
+                            "src": ["file:./assets/fonts/inter/inter-700-italic.woff2"],
                             "fontWeight": "700",
                             "fontStyle": "italic",
                             "fontFamily": "Inter"
@@ -505,6 +454,15 @@
                 }
             ],
             "fontSizes": [
+                {
+                    "name": "Display",
+                    "size": "88px",
+                    "slug": "rsf-display",
+                    "fluid": {
+                        "min": "48px",
+                        "max": "88px"
+                    }
+                },
                 {
                     "name": "Heading One",
                     "size": "56px",
@@ -1059,7 +1017,7 @@
                     "lineHeight": "1.2"
                 },
                 "color": {
-                    "text": "var(--wp--preset--color--rsf-neutral-darker)"
+                    "text": "var(--wp--preset--color--rsf-chambray-dark)"
                 }
             },
             "h2": {
@@ -1071,7 +1029,7 @@
                     "lineHeight": "1.2"
                 },
                 "color": {
-                    "text": "var(--wp--preset--color--rsf-neutral-darker)"
+                    "text": "var(--wp--preset--color--rsf-chambray-dark)"
                 }
             },
             "h3": {
@@ -1083,7 +1041,7 @@
                     "lineHeight": "1.2"
                 },
                 "color": {
-                    "text": "var(--wp--preset--color--rsf-neutral-dark)"
+                    "text": "var(--wp--preset--color--rsf-chambray-dark)"
                 }
             },
             "h4": {
@@ -1095,7 +1053,7 @@
                     "lineHeight": "1.2"
                 },
                 "color": {
-                    "text": "var(--wp--preset--color--rsf-neutral-darker)"
+                    "text": "var(--wp--preset--color--rsf-chambray-dark)"
                 }
             },
             "h5": {
@@ -1108,7 +1066,7 @@
                     "lineHeight": "1.2"
                 },
                 "color": {
-                    "text": "var(--wp--preset--color--rsf-neutral-darker)"
+                    "text": "var(--wp--preset--color--rsf-chambray-dark)"
                 }
             },
             "h6": {
@@ -1122,12 +1080,12 @@
                     "textTransform": "none"
                 },
                 "color": {
-                    "text": "var(--wp--preset--color--rsf-neutral-darker)"
+                    "text": "var(--wp--preset--color--rsf-chambray-dark)"
                 }
             },
             "heading": {
                 "color": {
-                    "text": "var(--wp--preset--color--rsf-neutral-darker)"
+                    "text": "var(--wp--preset--color--rsf-chambray-dark)"
                 },
                 "typography": {
                     "fontFamily": "var(--wp--preset--font-family--inter)",
