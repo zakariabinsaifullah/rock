@@ -1,13 +1,12 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
     "apiVersion": 3,
-    "name": "rsf/timeline",
-    "version": "1.0.0",
-    "title": "Timeline",
+    "name": "rsf/tab",
+    "version": "0.1.0",
+    "title": "Tab",
     "category": "rsf",
-    "icon": "star-filled",
-    "description": "Vertical timeline with customizable items.",
-    "example": {},
+    "parent": ["rsf/tabs"],
+    "description": "A single tab panel within a Tabs block.",
     "supports": {
         "anchor": true,
         "html": false,
@@ -25,11 +24,18 @@
         "uniqueId": {
             "type": "string"
         },
-        "contentGap": {
-            "type": "number"
+        "blockStyle": {
+            "type": "object"
+        },
+        "tabId": {
+            "type": "string"
+        },
+        "parentTabId": {
+            "type": "string"
         }
     },
     "textdomain": "rsf",
     "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
     "style": "file:./style-index.css"
 }

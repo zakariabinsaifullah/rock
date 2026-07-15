@@ -11,9 +11,7 @@ const Edit = () => {
             <div className="timeline-icon-row">
                 <div className="timeline-icon" />
             </div>
-            <div className="timeline-card">
-                <div {...innerBlockProps} />
-            </div>
+            <div {...innerBlockProps} />
         </div>
     );
 };

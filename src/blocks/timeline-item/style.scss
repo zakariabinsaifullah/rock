@@ -1,128 +1,124 @@
-.wp-block-craft-timeline-item {
+.wp-block-rsf-timeline-item {
     flex: 1;
     min-width: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 
     &::before {
         display: none;
     }
-
     .timeline-icon-row {
         display: flex;
         align-items: center;
-        gap: 0;
         width: 100%;
         position: relative;
-        z-index: 1;
 
         &::before,
         &::after {
             content: '';
             flex: 1;
-            height: 0;
-            border-top: 1px dashed #9361a8;
+            height: 2px;
+            background: #6e88a4;
         }
     }
 
-    // dot stays centered over its card (space reserved), but no line drawn
-    // before the first dot or after the last one
     &:first-child .timeline-icon-row::before {
-        border-top: none;
+        background: transparent;
     }
 
     &:last-child .timeline-icon-row::after {
-        border-top: none;
+        background: transparent;
     }
 
-    // ── Dot ───────────────────────────────────────────────────────
     .timeline-icon {
+        counter-increment: timeline-counter;
         flex-shrink: 0;
-        width: 18px;
-        height: 18px;
-        padding: 0;
-        border: none;
+        width: 64px;
+        height: 64px;
+        aspect-ratio: 1;
         border-radius: 50%;
-        background: #9361a8;
+        background: #354e8c;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: counter(timeline-counter);
+        }
 
         svg {
             display: none;
         }
     }
 
-    // ── Card: horizontal margin creates visual gap between cards ──
-    // icon-row stays full-width so lines connect; only card gets margin
-    .timeline-card {
-        margin: var(--item-gap, 16px) 12.5px 0;
-        background: #f6f6f6;
-        border-radius: 18px;
-        border: none;
-        padding: 36px 26px;
-        flex: 1;
-    }
-
     .timeline-content {
+        margin-top: var(--item-gap, 16px);
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 6px;
+        padding: 0 16px;
+        max-width: 340px;
+
+        p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #1a2233;
+        }
     }
 
-    &:first-child .timeline-card {
-        margin-left: 0;
-    }
-
-    &:last-child .timeline-card {
-        margin-right: 0;
-    }
-
-    // ── Mobile: vertical timeline ─────────────────────────────────
     @media (max-width: 767px) {
+        width: 100%;
         flex-direction: row;
         align-items: stretch;
-        gap: 24px;
-        width: 100%;
+        text-align: left;
+        gap: 20px;
 
         .timeline-icon-row {
+            flex-direction: column;
+            justify-content: flex-start;
             width: auto;
-            gap: 0;
-            align-items: center;
-            justify-content: center;
 
-            // vertical dot-to-dot line, reaching halfway into the
-            // gap between items so it stays continuous between cards
             &::before,
             &::after {
                 flex: none;
+                width: 2px;
                 height: auto;
-                width: 0;
-                border-top: none;
-                border-left: 1px dashed #9361a8;
                 position: absolute;
                 left: 50%;
             }
-
             &::before {
-                top: -8px;
-                bottom: 50%;
+                top: calc(-1 * var(--timeline-gap, 40px) / 2 - 12px);
+                bottom: calc(100% - 32px);
             }
 
             &::after {
-                top: 50%;
-                bottom: -8px;
+                top: 32px;
+                bottom: calc(-1 * var(--timeline-gap, 40px) / 2 - 12px);
             }
         }
 
         &:first-child .timeline-icon-row::before {
-            display: none;
+            background: transparent;
         }
 
         &:last-child .timeline-icon-row::after {
-            display: none;
+            background: transparent;
         }
 
-        .timeline-card {
-            width: 100%;
-            margin: 0 !important;
+        .timeline-content {
+            margin-top: 0;
+            padding: 4px 0 0;
+            max-width: none;
+            text-align: left;
         }
     }
 }

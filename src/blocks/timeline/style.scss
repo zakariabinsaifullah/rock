@@ -1,14 +1,16 @@
-.wp-block-craft-timeline {
+.wp-block-rsf-timeline {
     .craft-timeline {
         display: flex;
         flex-wrap: wrap;
         gap: 0;
-        align-items: stretch;
+        align-items: flex-start;
         position: relative;
+        counter-reset: timeline-counter;
 
         @media (max-width: 767px) {
             flex-direction: column;
-            gap: 16px;
+            --timeline-gap: 40px;
+            gap: var(--timeline-gap);
         }
     }
 }
