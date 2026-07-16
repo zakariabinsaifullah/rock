@@ -1,13 +1,12 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
     "apiVersion": 3,
-    "name": "rsf/timeline",
-    "version": "1.0.0",
-    "title": "Timeline",
+    "name": "rsf/tabs",
+    "version": "0.1.0",
+    "title": "Tabs",
     "category": "rsf",
-    "icon": "star-filled",
-    "description": "Vertical timeline with customizable items.",
-    "example": {},
+
+    "description": "Organize content into switchable tabs.",
     "supports": {
         "anchor": true,
         "html": false,
@@ -25,11 +24,22 @@
         "uniqueId": {
             "type": "string"
         },
-        "contentGap": {
-            "type": "number"
+        "tabTitles": {
+            "type": "array",
+            "default": []
+        },
+        "tabChildCount": {
+            "type": "number",
+            "default": 3
+        },
+        "tabTitleTag": {
+            "type": "string",
+            "default": "h3"
         }
     },
     "textdomain": "rsf",
     "editorScript": "file:./index.js",
-    "style": "file:./style-index.css"
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "viewScript": ["file:./view.js"]
 }

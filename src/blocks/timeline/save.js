@@ -14,7 +14,7 @@ const Save = props => {
 
     return (
         <div {...blockProps}>
-            <div className="rsf-timeline">
+            <div className="craft-timeline">
                 <InnerBlocks.Content />
             </div>
         </div>

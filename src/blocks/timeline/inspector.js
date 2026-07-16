@@ -9,9 +9,9 @@ const Inspector = props => {
 
     return (
         <InspectorControls>
-            <PanelBody title={__('Timeline Settings', 'rock-solid-financials')} initialOpen={true}>
+            <PanelBody title={__('Timeline Settings', 'craft-max')} initialOpen={true}>
                 <NativeRangeControl
-                    label={__('Gap (icon → content)', 'rock-solid-financials')}
+                    label={__('Gap (icon → content)', 'craft-max')}
                     value={contentGap}
                     onChange={value => setAttributes({ contentGap: value })}
                     min={0}

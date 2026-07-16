@@ -14,7 +14,7 @@
         "html": false
     },
     "attributes": {},
-    "textdomain": "rock-solid-financials",
+    "textdomain": "rsf",
     "editorScript": "file:./index.js",
     "style": "file:./style-index.css"
 }

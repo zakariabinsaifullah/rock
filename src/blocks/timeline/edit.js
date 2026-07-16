@@ -28,7 +28,7 @@ const Edit = props => {
     });
 
     const innerBlockProps = useInnerBlocksProps(
-        { className: 'rsf-timeline' },
+        { className: 'craft-timeline' },
         {
             allowedBlocks: ['rsf/timeline-item'],
             template: TEMPLATE,
@@ -48,7 +48,7 @@ const Edit = props => {
             {(isSelected || hasSelectedInnerBlock) && <Inspector {...props} />}
             <BlockControls>
                 <ToolbarGroup>
-                    <ToolbarButton icon={plus} label={__('Add Timeline Item', 'rock-solid-financials')} onClick={addItem} />
+                    <ToolbarButton icon={plus} label={__('Add Timeline Item', 'rsf')} onClick={addItem} />
                 </ToolbarGroup>
             </BlockControls>
             <div {...blockProps}>
