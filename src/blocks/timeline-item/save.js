@@ -8,10 +8,8 @@ const Save = () => {
             <div className="timeline-icon-row">
                 <div className="timeline-icon" />
             </div>
-            <div className="timeline-card">
-                <div className="timeline-content">
-                    <InnerBlocks.Content />
-                </div>
+            <div className="timeline-content">
+                <InnerBlocks.Content />
             </div>
         </div>
     );
