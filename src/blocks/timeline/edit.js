@@ -28,7 +28,7 @@ const Edit = props => {
     });
 
     const innerBlockProps = useInnerBlocksProps(
-        { className: 'craft-timeline' },
+        { className: 'rsf-timeline' },
         {
             allowedBlocks: ['rsf/timeline-item'],
             template: TEMPLATE,

@@ -35,20 +35,21 @@
     .timeline-icon {
         counter-increment: timeline-counter;
         flex-shrink: 0;
-        width: 64px;
-        height: 64px;
+        width: 50px;
+        height: 50px;
         aspect-ratio: 1;
         border-radius: 50%;
-        background: #354e8c;
+        background: #31567d;
         color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 32px;
-        font-weight: 700;
+        font-size: 24px;
+        font-weight: 600;
         line-height: 1;
         position: relative;
         z-index: 1;
+        border: 4px solid #fff !important;
 
         &::before {
             content: counter(timeline-counter);

@@ -37,7 +37,7 @@
             "default": "h3"
         }
     },
-    "textdomain": "rsf",
+    "textdomain": "rock-solid-financials",
     "editorScript": "file:./index.js",
     "editorStyle": "file:./index.css",
     "style": "file:./style-index.css",
