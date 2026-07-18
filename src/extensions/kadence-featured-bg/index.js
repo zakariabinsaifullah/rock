@@ -7,7 +7,7 @@
  */
 import { __ } from '@wordpress/i18n';
 import { addFilter } from '@wordpress/hooks';
-import { InspectorControls } from '@wordpress/block-editor';
+import { InspectorAdvancedControls } from '@wordpress/block-editor';
 import { PanelBody } from '@wordpress/components';
 import { createHigherOrderComponent } from '@wordpress/compose';
 import { useSelect } from '@wordpress/data';
@@ -64,20 +64,18 @@ addFilter(
             return (
                 <>
                     <BlockEdit {...props} />
-                    <InspectorControls>
-                        <PanelBody title={__('Featured Image Background', 'rock-solid-financials')} initialOpen={false}>
-                            <NativeToggleControl
-                                label={__('Use Featured Image as Background', 'rock-solid-financials')}
-                                checked={!!attributes[ATTRIBUTE]}
-                                onChange={value => setAttributes({ [ATTRIBUTE]: value })}
-                            />
-                            {!hasFeaturedImage && (
-                                <p style={{ color: '#999', fontSize: '12px', marginTop: '4px' }}>
-                                    {__('No featured image set for this post.', 'rock-solid-financials')}
-                                </p>
-                            )}
-                        </PanelBody>
-                    </InspectorControls>
+                    <InspectorAdvancedControls>
+                        <NativeToggleControl
+                            label={__('Use Featured Image as Background', 'rock-solid-financials')}
+                            checked={!!attributes[ATTRIBUTE]}
+                            onChange={value => setAttributes({ [ATTRIBUTE]: value })}
+                        />
+                        {!hasFeaturedImage && (
+                            <p style={{ color: '#999', fontSize: '12px', marginTop: '4px' }}>
+                                {__('No featured image set for this post.', 'rock-solid-financials')}
+                            </p>
+                        )}
+                    </InspectorAdvancedControls>
                 </>
             );
         };
