@@ -391,3 +391,5 @@ if ( ! function_exists( 'rsf_posts_grid_shortcode' ) ) :
 	}
 endif;
 add_shortcode( 'rsf_posts_grid', 'rsf_posts_grid_shortcode' );
+// Backwards-compatible alias: some content used the callback name as the tag.
+add_shortcode( 'rsf_posts_grid_shortcode', 'rsf_posts_grid_shortcode' );

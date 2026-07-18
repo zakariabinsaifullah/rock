@@ -31,4 +31,5 @@ require_once get_theme_file_path( 'inc/bindings.php' );   // Dynamic block data 
 require_once get_theme_file_path( 'inc/form.php' );       // Slide-in form panel & settings
 
 // ── Shortcodes ─────────────────────────────────────────────────────────────────
-require_once get_theme_file_path( 'inc/shortcode.php' );  // Posts grid shortcode
+require_once get_theme_file_path( 'inc/shortcode.php' );        // Posts grid shortcode
+require_once get_theme_file_path( 'inc/shortcodes-page.php' );  // Appearance → Rock Solid reference page

@@ -8,7 +8,7 @@ import { RichText, useBlockProps, useInnerBlocksProps, BlockControls } from '@wo
 import { ToolbarButton, ToolbarGroup } from '@wordpress/components';
 import { Fragment, useEffect, useRef, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
-import { dispatch, select } from '@wordpress/data';
+import { dispatch, select, useSelect } from '@wordpress/data';
 import { createBlock } from '@wordpress/blocks';
 
 /**
@@ -42,20 +42,42 @@ const Edit = props => {
         });
     }, [navItemBg, numberBg, numberColor]);
 
+    const tabRef = useRef(null);
+    const [activeTabIndex, setActiveTabIndex] = useState('1');
+
     /**
-     * Default Tab Titles
+     * Actual tab children — the single source of truth for the nav.
+     */
+    const childBlocks = useSelect(sel => sel('core/block-editor').getBlocks(clientId), [clientId]);
+
+    /**
+     * Keep the nav (tabTitles) in sync with the real tab children so that
+     * adding, removing or reordering a tab is reflected in the nav.
      */
     useEffect(() => {
-        if (tabTitles.length === 0) {
-            setAttributes({
-                tabTitles: [
-                    { id: '1', title: __('Tab 1', 'rsf') },
-                    { id: '2', title: __('Tab 2', 'rsf') },
-                    { id: '3', title: __('Tab 3', 'rsf') }
-                ]
-            });
+        if (!Array.isArray(childBlocks)) return;
+
+        const childIds = childBlocks.filter(block => block.name === 'rsf/tab').map(block => block.attributes.tabId);
+
+        // Wait until the initial template has rendered its children.
+        if (childIds.length === 0) return;
+
+        const inSync = childIds.length === tabTitles.length && childIds.every((id, index) => tabTitles[index] && tabTitles[index].id === id);
+
+        if (inSync) return;
+
+        const newTitles = childIds.map((id, index) => {
+            const existing = tabTitles.find(title => title.id === id);
+            return existing || { id, title: `${__('Tab', 'rsf')} ${index + 1}` };
+        });
+
+        setAttributes({ tabTitles: newTitles, tabChildCount: childIds.length });
+
+        // If the active tab was removed, fall back to the first one.
+        if (!childIds.includes(activeTabIndex)) {
+            setActiveTabIndex(childIds[0]);
         }
-    }, []);
+    }, [childBlocks]);
 
     /**
      * Block Props
@@ -71,7 +93,8 @@ const Edit = props => {
     const innerBlocksProps = useInnerBlocksProps(
         { className: 'tabs-content' },
         {
-            templateLock: 'all',
+            templateLock: false,
+            renderAppender: false,
             template: times(tabChildCount, n => [
                 'rsf/tab',
                 {
@@ -86,9 +109,6 @@ const Edit = props => {
     /**
      * Tabs Interactivity
      */
-    const tabRef = useRef(null);
-    const [activeTabIndex, setActiveTabIndex] = useState('1');
-
     const handleTabClick = tabId => {
         const tabsParent = tabRef?.current;
         if (!tabsParent) return;
@@ -102,20 +122,20 @@ const Edit = props => {
         setActiveTabIndex(tabId);
     };
     const appendBtn = () => {
-        const nextIndex = tabTitles.length + 1;
-        const newTabs = [...tabTitles, { id: String(nextIndex), title: `Tab ${nextIndex}` }];
-        setAttributes({
-            tabTitles: newTabs,
-            tabChildCount: nextIndex
-        });
+        const currentChildren = select('core/block-editor').getBlocks(clientId);
+        const tabs = currentChildren.filter(block => block.name === 'rsf/tab');
+
+        // Use the highest existing tabId + 1 so ids stay unique after removals.
+        const nextId = String(tabs.reduce((max, block) => Math.max(max, parseInt(block.attributes.tabId, 10) || 0), 0) + 1);
+
         const newBlock = createBlock('rsf/tab', {
-            tabId: String(nextIndex),
+            tabId: nextId,
             parentTabId: uniqueId
         });
-        const childBlocks = select('core/block-editor').getBlocks(clientId);
-        dispatch('core/block-editor').insertBlock(newBlock, childBlocks.length, clientId);
+        dispatch('core/block-editor').insertBlock(newBlock, currentChildren.length, clientId);
 
-        setActiveTabIndex(String(nextIndex));
+        // The nav title is added by the sync effect that watches child blocks.
+        setActiveTabIndex(nextId);
     };
 
     return (

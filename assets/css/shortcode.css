@@ -40,11 +40,11 @@
 }
 
 .ipg-filter-btn:hover {
-    color: #9361a8;
+    color: #31567D;
 }
 
 .ipg-filter-btn.active {
-    background: #9361a8;
+    background: #31567D;
     color: #ffffff;
     font-weight: 400;
 }
@@ -128,7 +128,7 @@
 }
 
 .ipg-card__title a:hover {
-    color: #9361a8;
+    color: #31567D;
 }
 
 .ipg-card__excerpt {
@@ -206,13 +206,13 @@
 }
 
 .ipg-page-btn:hover:not(:disabled) {
-    border-color: #9361a8;
-    color: #9361a8;
+    border-color: #31567D;
+    color: #31567D;
 }
 
 .ipg-page-btn.active {
-    background: #9361a8;
-    border-color: #9361a8;
+    background: #31567D;
+    border-color: #31567D;
     color: #ffffff;
 }
 
