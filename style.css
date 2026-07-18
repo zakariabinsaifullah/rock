@@ -6,7 +6,7 @@ Description: This Full Site Editing Theme is exclusively developed for Rock Soli
 Requires at least: 6.7
 Tested up to: 6.9
 Requires PHP: 7.4
-Version: 1.0.8
+Version: 1.0.9
 Text Domain: rock-solid-financials
 */
 
@@ -132,22 +132,4 @@ p {
 
 .kt-accordion-panel-active {
     border-radius: 8px 8px 0 0 !important;
-}
-
-.kb-table-container {
-    border: 1px solid #dadad9;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.kb-table th {
-    background: #132232;
-}
-
-.kb-table p {
-    margin: 0 !important;
-}
-
-.kb-table th p {
-    color: #fff !important;
 }

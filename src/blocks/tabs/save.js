@@ -14,14 +14,15 @@ import classnames from 'classnames';
 // block save function
 const Save = props => {
     const { attributes } = props;
-    const { uniqueId, tabTitles, tabTitleTag } = attributes;
+    const { uniqueId, tabTitles, tabTitleTag, blockStyle } = attributes;
     const tabsLength = tabTitles?.length || 0;
 
     /**
      * Block Props
      */
     const blockProps = useBlockProps.save({
-        className: classnames('wp-block-rsf-tabs', uniqueId)
+        className: classnames('wp-block-rsf-tabs', uniqueId),
+        style: blockStyle
     });
 
     return (

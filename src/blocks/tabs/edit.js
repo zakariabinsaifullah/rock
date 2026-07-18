@@ -25,7 +25,22 @@ import Inspector from './inspector';
 const Edit = props => {
     const { attributes, setAttributes, clientId, isSelected } = props;
 
-    const { uniqueId, tabTitles, tabChildCount, tabTitleTag } = attributes;
+    const { uniqueId, tabTitles, tabChildCount, tabTitleTag, navItemBg, numberBg, numberColor } = attributes;
+
+    /**
+     * CSS Custom Properties
+     */
+    const cssCustomProperties = {
+        ...(navItemBg && { '--rsf-tabs-nav-bg': navItemBg }),
+        ...(numberBg && { '--rsf-tabs-num-bg': numberBg }),
+        ...(numberColor && { '--rsf-tabs-num-color': numberColor })
+    };
+
+    useEffect(() => {
+        setAttributes({
+            blockStyle: cssCustomProperties
+        });
+    }, [navItemBg, numberBg, numberColor]);
 
     /**
      * Default Tab Titles
@@ -46,7 +61,8 @@ const Edit = props => {
      * Block Props
      */
     const blockProps = useBlockProps({
-        className: classnames(uniqueId)
+        className: classnames(uniqueId),
+        style: cssCustomProperties
     });
 
     /**

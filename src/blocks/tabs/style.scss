@@ -29,15 +29,15 @@
         border-radius: 12px;
         cursor: pointer;
         transition: all 0.3s;
-        background: #eaeef2;
+        background: var(--rsf-tabs-nav-bg, #eaeef2);
         display: flex;
         align-items: center;
         justify-content: center;
         overflow: hidden;
 
         .nav-item-number {
-            background: #fff;
-            color: #274464;
+            background: var(--rsf-tabs-num-bg, #fff);
+            color: var(--rsf-tabs-num-color, #274464);
         }
 
         &.active {

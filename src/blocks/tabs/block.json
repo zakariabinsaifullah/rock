@@ -35,6 +35,18 @@
         "tabTitleTag": {
             "type": "string",
             "default": "h3"
+        },
+        "blockStyle": {
+            "type": "object"
+        },
+        "navItemBg": {
+            "type": "string"
+        },
+        "numberBg": {
+            "type": "string"
+        },
+        "numberColor": {
+            "type": "string"
         }
     },
     "textdomain": "rock-solid-financials",

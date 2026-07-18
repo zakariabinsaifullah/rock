@@ -106,3 +106,26 @@ header.wp-block-kadence-rowlayout::before {
     padding-top: 16px !important;
     margin-top: 16px !important;
 }
+
+.kb-table-container {
+    border: 1px solid #dadad9;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.kb-table th {
+    background: #132232 !important;
+}
+
+.kb-table p {
+    margin: 0 !important;
+}
+
+.kb-table th p {
+    color: #fff !important;
+}
+
+.rsf-special-table tbody tr:last-child td:last-child {
+    background: #6e88a4;
+    color: #fff !important;
+}
