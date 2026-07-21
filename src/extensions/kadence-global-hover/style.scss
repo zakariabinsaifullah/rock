@@ -1,0 +1,22 @@
+/**
+ * Kadence Column — Global Hover Effect
+ *
+ * The `global-hover` class is added to kadence/column containers when the
+ * "Global Hover Effect" toggle is enabled. Hover styling is intentionally left
+ * to the theme/page so each column can define its own hover treatment.
+ */
+.global-hover:hover .kt-inside-inner-col,
+.global-hover:hover .kadence-inner-column-inner {
+    background: #142232 !important;
+}
+
+.global-hover:hover .wp-block-heading,
+.global-hover:hover .wp-block-paragraph {
+    color: #fff;
+}
+
+.global-hover:hover .wp-block-button__link {
+    background: #fff !important;
+    padding: 8px 20px !important;
+    border-radius: 6px;
+}

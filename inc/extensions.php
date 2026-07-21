@@ -1118,3 +1118,100 @@ if ( ! function_exists( 'rsf_render_kadence_featured_bg' ) ) :
 	}
 endif;
 add_filter( 'render_block', 'rsf_render_kadence_featured_bg', 10, 2 );
+
+// =============================================================================
+// Kadence Column — Global Hover Effect Extension
+// =============================================================================
+
+if ( ! function_exists( 'rsf_enqueue_kadence_global_hover_editor_assets' ) ) :
+	/**
+	 * Enqueues the kadence-global-hover extension script and editor stylesheet.
+	 */
+	function rsf_enqueue_kadence_global_hover_editor_assets() {
+		$asset_file = get_theme_file_path( 'build/extensions/kadence-global-hover/index.asset.php' );
+
+		if ( ! file_exists( $asset_file ) ) {
+			return;
+		}
+
+		$assets = require $asset_file;
+
+		wp_enqueue_script(
+			'rsf-kadence-global-hover-extension',
+			get_theme_file_uri( 'build/extensions/kadence-global-hover/index.js' ),
+			$assets['dependencies'],
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+
+		$editor_css = get_theme_file_path( 'build/extensions/kadence-global-hover/index.css' );
+		if ( file_exists( $editor_css ) ) {
+			wp_enqueue_style(
+				'rsf-kadence-global-hover-extension',
+				get_theme_file_uri( 'build/extensions/kadence-global-hover/index.css' ),
+				array(),
+				wp_get_theme()->get( 'Version' )
+			);
+		}
+	}
+endif;
+add_action( 'enqueue_block_editor_assets', 'rsf_enqueue_kadence_global_hover_editor_assets' );
+
+
+if ( ! function_exists( 'rsf_enqueue_kadence_global_hover_frontend_assets' ) ) :
+	/**
+	 * Enqueues the kadence-global-hover frontend stylesheet.
+	 */
+	function rsf_enqueue_kadence_global_hover_frontend_assets() {
+		$asset_file = get_theme_file_path( 'build/extensions/kadence-global-hover/index.asset.php' );
+		$style_file = get_theme_file_path( 'build/extensions/kadence-global-hover/style-index.css' );
+
+		if ( ! file_exists( $asset_file ) || ! file_exists( $style_file ) ) {
+			return;
+		}
+
+		$assets = require $asset_file;
+
+		wp_enqueue_style(
+			'rsf-kadence-global-hover-extension-style',
+			get_theme_file_uri( 'build/extensions/kadence-global-hover/style-index.css' ),
+			array(),
+			wp_get_theme()->get( 'Version' )
+		);
+	}
+endif;
+add_action( 'enqueue_block_assets', 'rsf_enqueue_kadence_global_hover_frontend_assets' );
+
+
+if ( ! function_exists( 'rsf_render_kadence_global_hover' ) ) :
+	/**
+	 * Injects the `global-hover` class into kadence/column blocks on the frontend
+	 * when the globalHoverEffect attribute is enabled.
+	 *
+	 * @param string $block_content The rendered block HTML.
+	 * @param array  $block         The block data including name and attributes.
+	 * @return string Modified block HTML.
+	 */
+	function rsf_render_kadence_global_hover( $block_content, $block ) {
+		if ( 'kadence/column' !== $block['blockName'] ) {
+			return $block_content;
+		}
+
+		if ( empty( $block['attrs']['globalHoverEffect'] ) ) {
+			return $block_content;
+		}
+
+		if ( empty( $block_content ) ) {
+			return $block_content;
+		}
+
+		$processor = new WP_HTML_Tag_Processor( $block_content );
+		if ( $processor->next_tag() ) {
+			$processor->add_class( 'global-hover' );
+			return $processor->get_updated_html();
+		}
+
+		return $block_content;
+	}
+endif;
+add_filter( 'render_block', 'rsf_render_kadence_global_hover', 10, 2 );
